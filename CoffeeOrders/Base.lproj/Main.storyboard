@@ -71,7 +71,7 @@
                                 <rect key="frame" x="0.0" y="56" width="393" height="421"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="rZm-bv-mf7">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CoffeTypeTableViewCell" id="rZm-bv-mf7">
                                         <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rZm-bv-mf7" id="SoM-mp-IWT">
@@ -80,6 +80,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="9IN-4Z-dpK" id="s1q-WN-lgd"/>
+                                    <outlet property="delegate" destination="9IN-4Z-dpK" id="2m7-i1-qQs"/>
+                                </connections>
                             </tableView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ssx-Yv-fPR">
                                 <rect key="frame" x="93.666666666666686" y="509" width="206" height="32"/>
@@ -125,6 +129,9 @@
                         <barButtonItem key="leftBarButtonItem" title="Close" id="CLe-8U-XRL"/>
                         <barButtonItem key="rightBarButtonItem" title="Save" id="xhy-le-p5K"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="hmR-JE-fQi" id="qXq-Le-HCn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j80-ky-5ce" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
