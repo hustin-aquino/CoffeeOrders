@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Title-->
+        <!--Orders-->
         <scene sceneID="Fsh-yk-dBN">
             <objects>
                 <tableViewController id="C9k-XM-byH" customClass="OrdersTableViewController" customModule="CoffeeOrders" customModuleProvider="target" sceneMemberID="viewController">
@@ -47,7 +47,7 @@
                             <outlet property="delegate" destination="C9k-XM-byH" id="hC7-J5-WCI"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Title" id="a6t-ds-9Qu">
+                    <navigationItem key="navigationItem" title="Orders" id="a6t-ds-9Qu">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="BJa-uk-MuN">
                             <connections>
                                 <segue destination="qoy-3u-7CL" kind="presentation" id="1Yw-qV-R8P"/>
@@ -116,7 +116,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add New Order" id="mJl-8k-VGW">
-                        <barButtonItem key="leftBarButtonItem" title="Close" id="CLe-8U-XRL"/>
+                        <barButtonItem key="leftBarButtonItem" title="Close" id="CLe-8U-XRL">
+                            <connections>
+                                <action selector="close" destination="9IN-4Z-dpK" id="1J9-zr-PJN"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Save" id="xhy-le-p5K">
                             <connections>
                                 <action selector="save" destination="9IN-4Z-dpK" id="jTz-rk-eaK"/>
