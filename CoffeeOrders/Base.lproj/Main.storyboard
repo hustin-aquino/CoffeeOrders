@@ -85,14 +85,6 @@
                                     <outlet property="delegate" destination="9IN-4Z-dpK" id="2m7-i1-qQs"/>
                                 </connections>
                             </tableView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ssx-Yv-fPR">
-                                <rect key="frame" x="93.666666666666686" y="509" width="206" height="32"/>
-                                <segments>
-                                    <segment title="Small"/>
-                                    <segment title="Medium"/>
-                                    <segment title="Large"/>
-                                </segments>
-                            </segmentedControl>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H14-0x-t2I">
                                 <rect key="frame" x="96.666666666666686" y="572" width="200" height="34"/>
                                 <constraints>
@@ -115,11 +107,9 @@
                         <constraints>
                             <constraint firstItem="1Ws-Nm-7Mp" firstAttribute="centerX" secondItem="r1k-1P-YzO" secondAttribute="centerX" id="92U-TK-9Ib"/>
                             <constraint firstItem="1Ws-Nm-7Mp" firstAttribute="top" secondItem="H14-0x-t2I" secondAttribute="bottom" constant="16" id="C0O-E2-9Gh"/>
-                            <constraint firstItem="H14-0x-t2I" firstAttribute="top" secondItem="ssx-Yv-fPR" secondAttribute="bottom" constant="32" id="Kcg-Lo-sZq"/>
+                            <constraint firstItem="H14-0x-t2I" firstAttribute="top" secondItem="hmR-JE-fQi" secondAttribute="bottom" constant="95" id="CcX-gH-smd"/>
                             <constraint firstItem="H14-0x-t2I" firstAttribute="centerX" secondItem="r1k-1P-YzO" secondAttribute="centerX" id="YdR-gn-WBC"/>
                             <constraint firstItem="hmR-JE-fQi" firstAttribute="top" secondItem="yxI-Ck-lVT" secondAttribute="top" id="Yrw-of-Zv9"/>
-                            <constraint firstItem="ssx-Yv-fPR" firstAttribute="top" secondItem="hmR-JE-fQi" secondAttribute="bottom" constant="32" id="c1Z-O8-MxG"/>
-                            <constraint firstItem="ssx-Yv-fPR" firstAttribute="centerX" secondItem="yxI-Ck-lVT" secondAttribute="centerX" id="gH9-yT-Jam"/>
                             <constraint firstItem="hmR-JE-fQi" firstAttribute="width" secondItem="r1k-1P-YzO" secondAttribute="width" id="hBr-Pd-uS1"/>
                             <constraint firstItem="hmR-JE-fQi" firstAttribute="leading" secondItem="yxI-Ck-lVT" secondAttribute="leading" id="jYd-lm-Prj"/>
                             <constraint firstItem="hmR-JE-fQi" firstAttribute="height" secondItem="r1k-1P-YzO" secondAttribute="height" multiplier="0.5" id="yFG-3c-2HR"/>
