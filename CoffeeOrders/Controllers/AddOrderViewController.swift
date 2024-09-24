@@ -68,5 +68,7 @@ class AddOrderViewController: UIViewController, UITableViewDelegate, UITableView
         self.vm.selectedSize = selectedSize
         self.vm.selectedType = self.vm.types[indexPath.row]
         
+        
+        
     }
 }
