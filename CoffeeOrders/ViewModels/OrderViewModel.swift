@@ -8,7 +8,7 @@
 import Foundation
 
 struct OrderListViewModel {
-    let orderViewModelList: [OrderViewModel]
+    var orderViewModelList: [OrderViewModel]
     
     init() {
         self.orderViewModelList = [OrderViewModel]()
